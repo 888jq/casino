@@ -352,23 +352,22 @@ img {
   }
 }
 
-/* CASCADE MULTIPLIER DISPLAY - INSIDE FRAME AT TOP */
+/* CASCADE MULTIPLIER DISPLAY - TOP CENTER */
 #cascadeMultiplier {
   font-size: 2.2em;
   font-weight: bold;
   color: #FFD700;
   text-shadow: 0 0 15px rgba(255, 215, 0, 1), 0 0 25px rgba(255, 0, 127, 0.8);
   position: absolute;
-  top: 50%;
+  top: 12px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.9);
   padding: 6px 16px;
   border: 2px solid #FFD700;
   border-radius: 6px;
   box-shadow: 0 0 20px rgba(255, 215, 0, 1), inset 0 0 8px rgba(0, 0, 0, 0.5);
   z-index: 50;
-  pointer-events: none;
 }
 
 #cascadeMultiplier.cascade-pop {
@@ -377,14 +376,14 @@ img {
 
 @keyframes cascadePop {
   0% {
-    transform: translate(-50%, -50%) scale(1) rotateZ(0deg);
+    transform: translateX(-50%) scale(1) rotateZ(0deg);
     opacity: 1;
   }
   50% {
-    transform: translate(-50%, -50%) scale(1.4) rotateZ(-10deg);
+    transform: translateX(-50%) scale(1.4) rotateZ(-10deg);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1) rotateZ(0deg);
+    transform: translateX(-50%) scale(1) rotateZ(0deg);
     opacity: 1;
   }
 }
